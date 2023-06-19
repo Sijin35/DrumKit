@@ -17,12 +17,12 @@ html {
     justify-content: center;
 
     position: relative;
-    width: 100rem;
-    height: 80rem;
+    width: 90vw;
+    height: 60vh;
     top: 5%;
     left: 50%;
     transform: translateX(-50%);
-    /* border: 10px solid #fff; */
+    /* border: 10px solid #000000; */
 }
 
 .key {
@@ -33,80 +33,81 @@ html {
     font-size: 1.5rem;
     padding: 1rem .5rem;
     transition: all .07s ease;
-    height: 10rem;
-    width: 10rem;
+    height: 10vw;
+    width: 10vw;
     text-align: center;
     color: white;
     background: rgba(0, 0, 0, 0.4);
     text-shadow: 0 0 .5rem black;
+    cursor: pointer;
 }
 
 /* Position Layout */
 
 /* A */
 .key:nth-child(1) {
-    top: 20rem;
-    left: 35rem;
+    top: 20%;
+    left: 35%;
 }
 
 /* S */
 .key:nth-child(2) {
-    top: 40rem;
-    left: 13rem;
+    top: 40%;
+    left: 13%;
 }
 
 /* D */
 .key:nth-child(3) {
-    top: 50rem;
-    left: 42rem;
+    top: 50%;
+    left: 42%;
 }
 
 /* F */
 .key:nth-child(4) {
-    top: 27rem;
-    left: 22rem;
+    top: 27%;
+    left: 22%;
 }
 
 /* G */
 .key:nth-child(5) {
-    top: 20rem;
-    left: 50rem;
+    top: 20%;
+    left: 50%;
 }
 
 /* H */
 .key:nth-child(6) {
-    top: 27rem;
-    left: 63rem;
+    top: 27%;
+    left: 63%;
 }
 
 /* J */
 .key:nth-child(7) {
-    top: 47rem;
-    left: 27rem;
+    top: 47%;
+    left: 27%;
 }
 
 /* K */
 .key:nth-child(8) {
-    top: 35rem;
-    left: 50rem;
+    top: 35%;
+    left: 50%;
 }
 
 /* L */
 .key:nth-child(9) {
-    top: 40rem;
-    left: 71rem;
+    top: 40%;
+    left: 71%;
 }
 
 /* M */
 .key:nth-child(10) {
-    top: 47rem;
-    left: 57rem;
+    top: 47%;
+    left: 57%;
 }
 
 /* I */
 .key:nth-child(11) {
-    top: 35rem;
-    left: 35rem;
+    top: 35%;
+    left: 35%;
 }
 
 
@@ -131,3 +132,49 @@ kbd {
     letter-spacing: .1rem;
     color: #ffc600;
 }
+
+
+/* Media Query */
+
+@media screen and (max-width: 800px) {
+
+    .keys {
+        width: 80vw;
+        height: 50vh;
+        top: 10%;
+    }
+
+    .key {
+        font-size: 1.2rem;
+        height: 8vw;
+        width: 8vw;
+
+    }
+
+    kbd {
+        font-size: 2rem;
+
+    }
+
+    .sound {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 260px) {
+    html {
+        font-size: 40%;
+    }
+
+    .keys {
+        width: 90vw;
+        height: 30vh;
+        top: 15%;
+    }
+
+    .key {
+        font-size: 1rem;
+        height: 25vw;
+        width: 25vw;
+        margin: 1.5vw;
+    }
