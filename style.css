@@ -40,20 +40,25 @@ html {
     background: rgba(0, 0, 0, 0.4);
     text-shadow: 0 0 .5rem black;
     cursor: pointer;
+    user-select: none;
 }
 
 /* Position Layout */
 
 /* A */
 .key:nth-child(1) {
-    top: 20%;
-    left: 35%;
+    top: 9%;
+    left: 33%;
+    height: 6vw;
+    width: 6vw;
 }
 
 /* S */
 .key:nth-child(2) {
-    top: 40%;
-    left: 13%;
+    top: 50%;
+    left: 25%;
+    height: 5vw;
+    width: 5vw;
 }
 
 /* D */
@@ -65,49 +70,63 @@ html {
 /* F */
 .key:nth-child(4) {
     top: 27%;
-    left: 22%;
+    left: 27%;
+    height: 5vw;
+    width: 5vw;
 }
 
 /* G */
 .key:nth-child(5) {
-    top: 20%;
-    left: 50%;
+    top: 9%;
+    left: 41%;
+    height: 6vw;
+    width: 6vw;
 }
 
 /* H */
 .key:nth-child(6) {
     top: 27%;
-    left: 63%;
+    left: 59%;
+    height: 7vw;
+    width: 7vw;
 }
 
 /* J */
 .key:nth-child(7) {
-    top: 47%;
-    left: 27%;
+    top: 61%;
+    left: 32%;
+    height: 7vw;
+    width: 7vw;
 }
 
 /* K */
 .key:nth-child(8) {
-    top: 35%;
-    left: 50%;
+    top: 21%;
+    left: 48%;
+    height: 8vw;
+    width: 8vw;
 }
 
 /* L */
-.key:nth-child(9) {
+/* .key:nth-child(9) {
     top: 40%;
     left: 71%;
-}
+} */
 
 /* M */
-.key:nth-child(10) {
-    top: 47%;
-    left: 57%;
+.key:nth-child(9) {
+    top: 57%;
+    left: 55%;
+    height: 8vw;
+    width: 8vw;
 }
 
 /* I */
-.key:nth-child(11) {
-    top: 35%;
+.key:nth-child(10) {
+    top: 33%;
     left: 35%;
+    height: 7vw;
+    width: 7vw;
 }
 
 
@@ -136,32 +155,50 @@ kbd {
 
 /* Media Query */
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1250px) {
 
-    .keys {
-        width: 80vw;
-        height: 50vh;
-        top: 10%;
+    html {
+        font-size: 50%;
     }
 
     .key {
         font-size: 1.2rem;
-        height: 8vw;
-        width: 8vw;
-
-    }
-
-    kbd {
-        font-size: 2rem;
-
-    }
-
-    .sound {
-        font-size: 1rem;
+        height: 12vw;
+        width: 12vw;
+        margin: 1
     }
 }
 
-@media screen and (max-width: 260px) {
+@media screen and (max-width: 950px) {
+
+    html {
+        font-size: 35%;
+    }
+
+    .key {
+        font-size: 1.2rem;
+        height: 12vw;
+        width: 12vw;
+        margin: 1
+    }
+}
+
+@media screen and (max-width: 550px) {
+
+    html {
+        font-size: 20%;
+    }
+
+    .key {
+        font-size: 1.2rem;
+        height: 12vw;
+        width: 12vw;
+        margin: 1
+    }
+}
+
+
+/* @media screen and (max-width: 260px) {
     html {
         font-size: 40%;
     }
@@ -178,3 +215,4 @@ kbd {
         width: 25vw;
         margin: 1.5vw;
     }
+} */
